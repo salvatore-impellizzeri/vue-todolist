@@ -30,7 +30,7 @@
             <!-- MAIN -->
 
             <main>
-                <input v-model="newTodo" type="text">
+                <input @keyup.enter="addTodo()" v-model="newTodo" type="text">
                 <button @click="addTodo()">Aggiungi</button>
                 <ul>
                     <li :class="todo.done == true ? 'done-class' : '' " v-for="(todo, i) in todos">
