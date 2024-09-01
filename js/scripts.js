@@ -43,6 +43,9 @@ createApp ({
                 this.todos.push({ text: this.newTodo, done: false });
                 this.newTodo = "";
             }
+        },
+        changeDone(i){
+            this.todos[i].done = !this.todos[i].done;
         }
     }
 }).mount("#todo");
