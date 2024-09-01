@@ -1,3 +1,16 @@
+#todo{
+    width: 500px;
+    margin: 20px auto;
+}
+
 .done-class{
     text-decoration: line-through;
+}
+
+input{
+    margin: 20px;
+}
+
+h1{
+    margin-left: 20px;
 }

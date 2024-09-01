@@ -28,13 +28,21 @@ createApp ({
                     text: "Fare la doccia",
                     done: false,
                 }
-            ]
+            ],
+
+            newTodo: ""
         }
     },
 
     methods: {
         removeTodo(i){
             this.todos.splice(i,1);
+        },
+        addTodo(){
+            if (this.newTodo.trim()){
+                this.todos.push({ text: this.newTodo, done: false });
+                this.newTodo = "";
+            }
         }
     }
 }).mount("#todo");
